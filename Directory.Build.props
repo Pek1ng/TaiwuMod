@@ -1,0 +1,40 @@
+<Project>
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<PropertyGroup>
+		<GameDirectory>C:\Program Files (x86)\Steam\steamapps\common\The Scroll Of Taiwu</GameDirectory>
+		<RootDirectory>$(MSBuildStartupDirectory)\GameBackup</RootDirectory>
+		<ManagedDllDirectory>$(RootDirectory)\The Scroll of Taiwu_Data\Managed</ManagedDllDirectory>
+		<BackendPropsDirectory>$(MSBuildStartupDirectory)\Props\Directory.Build.Backend.props</BackendPropsDirectory>
+		<FrontendPropsDirectory>$(MSBuildStartupDirectory)\Props\Directory.Build.Frontend.props</FrontendPropsDirectory>
+	  
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="Exists('$(GameDirectory)')">
+		<RootDirectory>$(GameDirectory)</RootDirectory>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(ManagedDllDirectory)\0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="TaiwuModdingLib">
+			<HintPath>$(ManagedDllDirectory)\TaiwuModdingLib.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="$(FrontendPropsDirectory)" />
+	<PropertyGroup>
+		<OutputPath>$(RootDirectory)/Mod/PowerDisplay/Plugins</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\TinyLib\TinyLib.Frontend\TinyLib.Frontend.csproj">
+	    <Private>False</Private>
+	  </ProjectReference>
+	</ItemGroup>
+</Project>

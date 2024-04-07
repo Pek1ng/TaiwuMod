@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyLib.Backend", "Src\TinyLib\TinyLib.Backend\TinyLib.Backend.csproj", "{DA2B6446-1D22-4C36-AA03-DA915D91FBD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyLib.Frontend", "Src\TinyLib\TinyLib.Frontend\TinyLib.Frontend.csproj", "{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerDisplay.Frontend", "Src\PowerDisplay\PowerDisplay.Frontend\PowerDisplay.Frontend.csproj", "{18E5EE53-CD2B-4E66-A4C4-829F848669C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TinyLib", "TinyLib", "{F1FC0A02-C89B-4EA9-AC43-A165F7C1B0B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerDisplay", "PowerDisplay", "{9E809B8E-9BE2-44E4-BB2B-0BF19AD29013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{0E9A9B46-B315-4E60-AC2C-AB555124832B}"
+	ProjectSection(SolutionItems) = preProject
+		Props\Directory.Build.Backend.props = Props\Directory.Build.Backend.props
+		Props\Directory.Build.Frontend.props = Props\Directory.Build.Frontend.props
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA2B6446-1D22-4C36-AA03-DA915D91FBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2B6446-1D22-4C36-AA03-DA915D91FBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2B6446-1D22-4C36-AA03-DA915D91FBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2B6446-1D22-4C36-AA03-DA915D91FBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E5EE53-CD2B-4E66-A4C4-829F848669C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E5EE53-CD2B-4E66-A4C4-829F848669C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E5EE53-CD2B-4E66-A4C4-829F848669C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E5EE53-CD2B-4E66-A4C4-829F848669C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA2B6446-1D22-4C36-AA03-DA915D91FBD4} = {F1FC0A02-C89B-4EA9-AC43-A165F7C1B0B6}
+		{E7075CA3-8F0D-484C-AFC1-748DA6DF51D2} = {F1FC0A02-C89B-4EA9-AC43-A165F7C1B0B6}
+		{18E5EE53-CD2B-4E66-A4C4-829F848669C6} = {9E809B8E-9BE2-44E4-BB2B-0BF19AD29013}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1DAE1AF-5255-49D1-A4F7-4642E72C78EB}
+	EndGlobalSection
+EndGlobal
